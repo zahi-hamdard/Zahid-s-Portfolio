@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+        .contactContents {
+            display: flex;
+            padding: 1.04169rem 0rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.34375rem;
+            flex: 1 0 0;
+            align-self: stretch;
+        }
+
+        .contactContentsData {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.47569rem;
+        }
+
+        .formTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.60763rem;
+            align-self: stretch;
+        }
+
+        .formTitle h1 {
+            color: #202244;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.5625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .formTitle p {
+            color: var(--Light-Sub-Text-Color, #707B81);
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.04169rem;
+            font-style: normal;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.31625rem; /* 126.358% */
+        }
+
+        form {
+            display: flex;
+            width: 20.0425rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+        }
+
+        label {
+            color: var(--Color-System-Dark-Color-Mid, #30373D);
+            font-family: Poppins;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 0.86806rem; /* 133.333% */
+            align-self: stretch;
+            margin-bottom: -0.3rem;
+
+        }
+
+        input {
+            display: flex;
+            padding: 1.04169rem;
+            align-items: center;
+            gap: 0.47863rem;
+            align-self: stretch;
+
+            border-radius: 1.04169rem;
+            border: 0.694px solid #000;
+        }
+
+        textarea {
+            display: flex;
+            padding: 1.04169rem;
+            align-items: center;
+            gap: 0.47863rem;
+            align-self: stretch;
+            flex-basis: 4rem;
+
+            border-radius: 1.04169rem;
+            border: 0.694px solid #000;
+        }
+
+        button {
+            display: flex;
+            padding: 0.89744rem 1.9145rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.47863rem;
+            align-self: stretch;
+            border-radius: 1.04169rem;
+            border: 1.4px solid #000;
+            background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+            background: url(./images/Action\ Button.svg) white 50% / cover no-repeat;
+
+            color: var(--Light-Text-Color, #1A2530);
+            font-family: Poppins;
+            font-size: 1.07694rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.31625rem; /* 122.222% */
+        }
+
+        .footer {
+            display: flex;
+            padding: 1.04169rem 0rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.434rem;
+            align-self: stretch;
+        } 
+
+        .footerData {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.434rem;
+        }
+
+        .footerData h1 {
+            color: #202244;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.5625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration: underline;
+            color:#1A2530;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.86806rem;
+            align-self: stretch;
+        }
+
+        .row2 p {
+            color: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+            font-family: Roboto;
+            font-size: 0.60763rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 0.95488rem; /* 157.143% */
+        }
+
+        .footerData p {
+            color: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+            font-family: Roboto;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 0.95488rem; /* 157.143% */
+        }
+
+    </style>
+</head>
+<body>
+    <section id="contact">
+
+        <div class="contactContents">
+            <div class="contactContentsData">
+                <div class="formTitle">
+                    <h1>Contact Me</h1>
+                    <p>Feel free to reach out to me for collaborations, 
+                        <br>projects, or just to say hi!</p>
+                </div>
+                <form action="">
+                    <div class="input">
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="footerData">
+                <a href="./index.html"><h1>Back to Home</h1></a>
+                <div class="row2">
+                    <p>@zahidhamdard</p>
+                    <img src="./images/Github.svg" alt="">
+                    <p>@zahidhamdard</p>
+                </div>
+                <p>Copyright © 2024 Zahid Hamdard. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
