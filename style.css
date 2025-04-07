@@ -76,6 +76,16 @@ nav a {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Hide section-nav menu items on mobile by default */
+#section-nav {
+    display: none;
+}
+
+/* Show section-nav when mobile-nav class is active */
+#section-nav.mobile-nav {
+    display: flex;
+}
+
 #section-nav nav {
     height: 3rem;
 }
@@ -527,14 +537,43 @@ nav img {
     display: none;
 }
 
+/* Mobile navigation menu styles */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transform: none !important; /* Ensure it's visible */
+}
 
+.mobile-nav nav ul {
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.mobile-nav nav ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
 
+.burger-menu {
+    cursor: pointer;
+    z-index: 2001; /* Ensure it stays above the mobile nav */
+}
 
 /* for mobile devices  */
-
-
-
 
 /* This is a media query for Home section */
 @media (max-width: 758px)  {
@@ -592,7 +631,7 @@ nav img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 0;
     }
 
@@ -721,8 +760,6 @@ nav img {
     }
 }
 
-
-
 /* This is a media query for About section */
 
 @media (max-width: 758px) {
@@ -748,7 +785,7 @@ nav img {
 
     .about_title {
         display: flex;
-        padding-top: 2rem;
+        padding-top: 4rem;
         justify-content: center;
         align-items: center;
         gap: 0.625rem;
@@ -818,7 +855,7 @@ nav img {
 @media (max-width: 758px) {
     .about1_title {
         display: flex;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
     .about1_title h1 {
@@ -921,7 +958,7 @@ nav img {
         align-items: flex-end;
         gap: 0.625rem;
         align-self: stretch;
-        padding-top: 2rem;
+        padding-top: 4rem;
 
     }
     .footer_data {
