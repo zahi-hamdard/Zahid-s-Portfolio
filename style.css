@@ -651,10 +651,11 @@ nav img {
         color: #000;
         text-align: center;
         font-family: Splash;
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
     }
     
     .hero_info {
@@ -1065,5 +1066,8 @@ nav img {
         text-underline-position: from-font;
     }
 }
+
+
+
 
 

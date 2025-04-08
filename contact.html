@@ -84,10 +84,12 @@
 
         input {
             display: flex;
-            padding: 1.04169rem;
+            padding: 0.8rem 0.9rem;
             align-items: center;
             gap: 0.47863rem;
             align-self: stretch;
+            font-size: 1rem;
+            font-family: poppins;
 
             border-radius: 1.04169rem;
             border: 0.694px solid #000;
@@ -95,11 +97,13 @@
 
         textarea {
             display: flex;
-            padding: 1.04169rem;
+            padding: 0.8rem 0.9rem;
             align-items: center;
             gap: 0.47863rem;
             align-self: stretch;
             flex-basis: 4rem;
+            font-size: 1rem;
+            font-family: poppins;
 
             border-radius: 1.04169rem;
             border: 0.694px solid #000;
@@ -177,6 +181,47 @@
             font-style: normal;
             font-weight: 400;
             line-height: 0.95488rem; /* 157.143% */
+        }
+
+        @media (max-width: 758px) {
+            .formTitle {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.61431rem;
+                align-self: stretch;
+            }
+            .formTitle h1 {
+                color: #202244;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 1.57963rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                align-self: stretch;
+            }
+            .formTitle p {
+                color: var(--Light-Sub-Text-Color, #707B81);
+                text-align: center;
+                font-family: Poppins;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem; /* 150% */
+            }
+            .footerData a h1 {
+                color: #202244;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration: underline;
+                color:#1A2530;
+                padding-bottom: 2rem;
+            }
         }
 
     </style>
